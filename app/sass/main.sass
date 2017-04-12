@@ -1,0 +1,195 @@
+@import "../sass/_vars.sass"
+@import "../sass/_mixins.sass"
+
+a,
+a:visited
+  color: #e5edf4
+  text-decoration: none
+
+li
+  list-style-type: none
+
+.top-info
+  display: flex
+  align-items: center
+  height: 40px
+  background-color: $dark-accent
+
+  .container
+    display: flex
+    margin: 0 auto
+    width: 1200px
+
+    a, span
+      color: #e5edf4
+      @include font('Calibri-Bold', 14px)
+      text-transform: uppercase
+
+    .contact-support
+      margin-left: auto
+      margin-right: 15px
+
+    .number
+      color: #d9d71a
+      padding-right: 25px
+      line-height: 12px
+      border-right: 1px solid #8f9193
+
+    .contact-us
+      padding: 0 25px 0 20px
+      line-height: 12px
+      border-right: 1px solid #8f9193
+
+    .help
+      padding: 0 15px 0 25px
+
+.top-main
+  display: flex
+  align-items: center
+  height: 100px
+  background-color: $middle-accent
+  background:
+    image: url(/img/bg-top.png)
+    repeat: no-repeat
+    size: 50% 100%
+
+  .container
+    display: flex
+    margin: 0 auto
+    width: 1200px
+
+    select
+      @include font('Calibri-Regular', 16px)
+
+    .search-box
+      display: flex
+      align-items: center
+      margin-left: 40px
+      height: 40px
+      background-color: #fff
+
+      select
+        position: relative
+        width: 150px
+        height: 100%
+        margin-right: 10px
+        border: none
+        outline: none
+        cursor: pointer
+
+      .separator:after
+          content: ''
+          color: red
+          border-right: 1px solid grey
+
+      .search-field
+        width: 400px
+        height: 100%
+        padding: 0 10px
+        border: none
+        outline: none
+
+
+      .fa-search
+        padding: 12px
+        color: #fff
+        background-color: $blue
+        cursor: pointer
+
+    .top-refs
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-left: 20px
+      @include font('Calibri-Bold', 12px)
+      text-transform: uppercase
+
+      .my-acc,
+      .track-order,
+      .login
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        i
+          &:nth-child(1)
+            margin-bottom: 5px
+
+      .track-order:before
+        content: ''
+        position: absolute
+        top: 40%
+        right: -10px
+        width: 1px
+        height: 10px
+        background-color: grey
+
+      .track-order::after
+        content: ''
+        position: absolute
+        top: 40%
+        left: -10px
+        width: 1px
+        height: 10px
+        background-color: grey
+
+      .cart
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 40px
+        padding: 7px
+        margin-right: 15px
+        color: #fff
+        background-color: $orange
+        border-radius: 5px
+        cursor: pointer
+
+        .fa-shopping-cart,
+        .fa-angle-down
+          font-size: 16px
+          color: #fff
+
+nav
+  background-color: $dark-accent
+
+  .container
+    display: flex
+    align-items: center
+    margin: 0 auto
+    width: 1200px
+    height: 50px
+
+    select
+      width: 200px
+      padding: 10px
+      margin-right: 70px
+      @include font('Calibri-Bold', 15px)
+      text-transform: uppercase
+      color: #fff
+      background: $orange url("/img/angle-down.png") no-repeat 85% 50%
+      border-radius: 5px
+      border: none
+      appearance: none
+      outline: none
+
+    ul
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 600px
+      margin: 0
+      padding: 0
+
+      li
+        display: inline-block
+        color: #fff
+        @include font('Calibri-Regular', 17px)
+        text-transform: uppercase
+
+        &:hover
+          padding-top: 16px
+          padding-bottom: 8px
+          border-bottom: 7px solid $blue
