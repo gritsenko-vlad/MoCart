@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/sass/main.css">
+  <link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="libs/slick-carousel/slick/slick-theme.css">
   <title>MoCart</title>
 </head>
 <body>
+
   <header>
       <div class="top-info">
         <div class="container">
@@ -22,7 +26,7 @@
 
       <div class="top-main">
         <div class="container">
-          <object data="/img/top-logo.svg" class="top-logo"></object>
+          <object data="img/top-logo.svg" class="top-logo"></object>
 
           <div class="search-box">
             <select name="categories">
@@ -77,7 +81,588 @@
           </ul>
         </div>
       </nav>
+
+      <div class="company-features">
+        <div class="container">
+          <div class="feature">
+            <i class="fa fa-plane" aria-hidden="true"></i>
+            <div class="feature-text">
+              <span>free shipping</span>
+              <span>In Order Min $200</span>
+            </div>
+          </div>
+          <div class="feature">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <div class="feature-text">
+              <span>30-days returns</span>
+              <span>Money Back Guarantee</span>
+            </div>
+          </div>
+          <div class="feature">
+            <i class="fa fa-life-ring" aria-hidden="true"></i>
+            <div class="feature-text">
+              <span>24/7 support</span>
+              <span>Lifestyle Support</span>
+            </div>
+          </div>
+        </div>
+      </div>
   </header>
+
+  <div class="container">
+    <div class="news">
+        <div class="news-banner">
+          <img src="img/news-banner.png" alt="fashion" class="news-image">
+          <a href="#" class="preview-now-btn">Preview Now</a>
+        </div>
+
+        <div class="stock-banner">
+          <span class="stock-name">Today's deals</span>
+          <span class="end-in">end in</span>
+          <div class="timer">
+            <span class="hours">10</span> :
+            <span class="minutes">00</span> :
+            <span class="seconds">00</span>
+          </div>
+          <img src="img/product.jpg" alt="discount product">
+          <span class="phone-model">Samsung 16GB MicroSD Class 6</span>
+          <div class="price">
+            <span class="discount"><span>Rs 499</span>[30% OFF]</span>
+            <span class="new-price">Rs350</span>
+          </div>
+        </div>
+    </div>
+    <div class="categories">
+      <span>Go quickly to</span>
+      <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+      <a href="#">Mobiles</a>:
+      <a href="#">Sports</a>:
+      <a href="#">Tablets</a>:
+      <a href="#">Bath Towels</a>:
+      <a href="#">LED Bulbs</a>:
+      <a href="#">TV</a>:
+      <a href="#">Washing Machines</a>:
+      <a href="#">Laptops</a>:
+      <a href="#">Headphones</a>:
+      <a href="#">Fans</a>:
+      <a href="#">Travel</a>:
+      <a href="#">Books</a>
+    </div>
+    <div class="discounts">
+      <div class="discount-block-1">
+        <span class="discount-name">20% off on Mobiles & more.*</span>
+        <ul>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Apple Mobile</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Samsung Mobile</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Micromax Mobile</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Nokia Mobile</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>HTC Mobile</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>SOny Mobile</li>
+        </ul>
+      </div>
+      <div class="discount-block-2">
+        <span class="discount-name">50% off on Fashion wear & more.*</span>
+        <ul>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Bags and Wallets</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Belts</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Bootees</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Cold Weather</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Jewerly</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Ties and Hats</li>
+        </ul>
+      </div>
+      <div class="discount-block-3">
+        <span class="discount-name">20% off activewear & more.*</span>
+        <ul>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Bras</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Hair Accessories</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Hats and Gloves</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Lifestyle</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Scarves</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Small Leathers</li>
+        </ul>
+      </div>
+      <div class="discount-block-1">
+        <span class="discount-name">20% off on Mobiles & more.*</span>
+        <ul>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Apple Mobile</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Samsung Mobile</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Micromax Mobile</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>Nokia Mobile</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>HTC Mobile</li>
+          <li><i class="fa fa-caret-right" aria-hidden="true"></i>SOny Mobile</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="products-name">Latest products</h3>
+    <div class="products">
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-1.jpg" alt="product-1" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span> [30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-2.jpg" alt="product-2" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span>[30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-3.jpg" alt="product-3" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span>[30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-4.jpg" alt="product-4" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span>[30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-5.jpg" alt="product-5" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span>[30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="products-name">Clearence Sale</h3>
+    <div class="products">
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-1.jpg" alt="product-1" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span> [30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-2.jpg" alt="product-2" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span>[30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-3.jpg" alt="product-3" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span>[30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-4.jpg" alt="product-4" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span>[30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-5.jpg" alt="product-5" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span>[30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="products-name">Your Recently Viewed items</h3>
+    <div class="products">
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-1.jpg" alt="product-1" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span> [30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-2.jpg" alt="product-2" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span>[30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-3.jpg" alt="product-3" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span>[30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-4.jpg" alt="product-4" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span>[30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-inner">
+          <img src="img/product-5.jpg" alt="product-5" class="l-product-image">
+          <span class="product-name">Samsung 16GB MicroSD Class 6</span>
+          <div class="rate">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+          </div>
+          <span class="old-price">
+            <span class="overline-price">Rs 499</span>[30% OFF]</span>
+          <span class="new-price">Rs 350</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="company-features-bottom">
+    <div class="container">
+      <div class="feature">
+        <i class="fa fa-plane" aria-hidden="true"></i>
+        <div class="feature-text">
+          <span>free shipping</span>
+          <span>In Order Min $200</span>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <div class="feature-text">
+          <span>30-days returns</span>
+          <span>Money Back Guarantee</span>
+        </div>
+      </div>
+      <div class="feature">
+        <i class="fa fa-life-ring" aria-hidden="true"></i>
+        <div class="feature-text">
+          <span>24/7 support</span>
+          <span>Lifestyle Support</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="help">
+        <span class="footer-item-name">Help</span>
+        <ul>
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Contact Customer Service</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Score Card</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Product Availability</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Recalls</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Return Policy</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Shipping Rates</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="company">
+        <span class="footer-item-name">Company</span>
+        <ul>
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">About us</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Affiliate Program</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Careers</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Gift Shop</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Group Sales</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Contact us</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="my-account-footer">
+        <span class="footer-item-name">My Account</span>
+        <ul>
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Your Account</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Information</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Addresses</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Orders history</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Delivery Information</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Search Terms</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="information">
+        <span class="footer-item-name">Informations</span>
+        <ul>
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Terms and conditions</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">About us</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Sitemap</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Contact</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Return policy</a>
+          </li>
+
+          <li>
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+            <a href="#">Suppliers</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="sale-news">
+        <span class="footer-item-name">Sale News</span>
+
+        <p class="sale-news-text">Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit.</p>
+
+        <div class="email-sign-up">
+          <input type="email" placeholder="Sign up for our Newsletter!">
+          <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        </div>
+
+        <span class="footer-item-name">Follow Us</span>
+        <div class="social-links">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p class="copyright">Copyright © 2017 mocart.com All rights reserved.</p>
+      <img src="img/donate.png" alt="donate" class="donate">
+    </div>
+  </div>
+
+  <script src="libs/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script src="libs/slick-carousel/slick/slick.min.js"></script>
+  <script src="js/main.js" charset="utf-8"></script>
   <script src="https://use.fontawesome.com/dc824e9272.js"></script>
 </body>
 </html>

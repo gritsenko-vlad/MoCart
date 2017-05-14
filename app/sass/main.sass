@@ -1,6 +1,9 @@
 @import "../sass/_vars.sass"
 @import "../sass/_mixins.sass"
 
+body
+  background-color: #e0e0e0
+
 a,
 a:visited
   color: #e5edf4
@@ -17,6 +20,7 @@ li
 
   .container
     display: flex
+    align-items: center
     margin: 0 auto
     width: 1200px
 
@@ -49,7 +53,7 @@ li
   height: 100px
   background-color: $middle-accent
   background:
-    image: url(/img/bg-top.png)
+    image: url(../../img/bg-top.png)
     repeat: no-repeat
     size: 50% 100%
 
@@ -65,6 +69,7 @@ li
       display: flex
       align-items: center
       margin-left: 40px
+      width: 60%
       height: 40px
       background-color: #fff
 
@@ -83,7 +88,7 @@ li
           border-right: 1px solid grey
 
       .search-field
-        width: 400px
+        width: 100%
         height: 100%
         padding: 0 10px
         border: none
@@ -97,7 +102,7 @@ li
         cursor: pointer
 
     .top-refs
-      width: 100%
+      width: 40%
       display: flex
       align-items: center
       justify-content: space-between
@@ -121,7 +126,7 @@ li
         content: ''
         position: absolute
         top: 40%
-        right: -10px
+        right: -15px
         width: 1px
         height: 10px
         background-color: grey
@@ -130,7 +135,7 @@ li
         content: ''
         position: absolute
         top: 40%
-        left: -10px
+        left: -15px
         width: 1px
         height: 10px
         background-color: grey
@@ -159,21 +164,22 @@ nav
     display: flex
     align-items: center
     margin: 0 auto
-    width: 1200px
+    max-width: 1200px
     height: 50px
 
     select
       width: 200px
       padding: 10px
       margin-right: 70px
-      @include font('Calibri-Bold', 15px)
+      @include font('Calibri-Bold', 17px)
       text-transform: uppercase
       color: #fff
-      background: $orange url("/img/angle-down.png") no-repeat 85% 50%
+      background: $orange url(../../img/angle-down.png) no-repeat 85% 50%
       border-radius: 5px
       border: none
       appearance: none
       outline: none
+      cursor: pointer
 
     ul
       display: flex
@@ -193,3 +199,388 @@ nav
           padding-top: 16px
           padding-bottom: 8px
           border-bottom: 7px solid $blue
+
+.company-features
+  background-color: #fff
+
+  .container
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin: 0 auto
+    max-width: 1200px
+    height: 55px
+
+    .feature
+      display: flex
+      align-items: center
+
+      i
+        font-size: 26px
+        color: $blue
+        margin-right: 15px
+
+      .feature-text
+        display: flex
+        flex-direction: column
+
+        span:first-child
+          @include font ('Lato-Bold', 15px)
+          line-height: 15px
+          text-transform: uppercase
+
+        span:nth-child(2)
+          @include font ('Lato-Regular', 13px)
+          line-height: 15px
+          color: #666
+
+.container
+  margin: 0 auto
+  max-width: 1200px
+
+  .slick-prev
+    width: 0
+    height: 0
+    margin-left: -10px
+    border-style: solid
+    border-width: 35px 35px 35px 0
+    border-color: transparent lighten($blue, 5) transparent transparent
+
+    &:hover
+      border-color: transparent $blue transparent transparent
+
+  .slick-next
+    width: 0
+    height: 0
+    margin-right: -10px
+    border-style: solid
+    border-width: 35px 0 35px 35px
+    border-color: transparent transparent transparent lighten($blue, 5)
+
+    &:hover
+      border-color: transparent transparent transparent $blue
+
+  .news
+    display: flex
+    justify-content: space-between
+    margin-top: 50px
+
+    .news-banner
+      position: relative
+      max-width: 770px
+      height: 370px
+      background-color: #fff
+
+      .news-image
+        width: 100%
+        height: 370px
+
+      .preview-now-btn
+        position: absolute
+        bottom: 50px
+        left: 30%
+        padding: 10px 15px
+        background-color: $blue
+        border-radius: 5px
+        @include font('Calibri-Regular', 15px)
+
+    .stock-banner
+      display: flex
+      flex-direction: column
+      align-items: center
+      width: 370px
+      height: 370px
+      background-color: #fff
+
+      .timer
+        padding: 10px
+        @include font('Calibri-Bold', 24px)
+        color: $orange
+        .hours,
+        .minutes,
+        .seconds
+          padding: 5px
+          color: #fff
+          background-color: $orange
+
+      img
+        width: 180px
+        height: 195px
+
+      .stock-name
+        @include font('Calibri-Bold', 40px)
+        color: $blue
+        text-transform: uppercase
+
+      .end-in
+        @include font('Calibri-Bold', 12px)
+        text-transform: uppercase
+
+      .phone-model
+        @include font('Calibri-Bold', 16px)
+
+      .price
+        display: flex
+        align-items: center
+        white-space: nowrap
+
+        .discount
+          margin-right: 120px
+
+          span
+            text-decoration: line-through
+
+        .new-price
+          @include font('Calibri-Regular', 34px)
+          color: $blue
+
+  .categories
+    display: flex
+    justify-content: space-around
+    align-items: center
+    width: 100%
+    height: 55px
+    margin-top: 20px
+    background-color: #fff
+
+    span
+      @include font('Calibri-Bold', 15px)
+
+    i
+      color: $blue
+
+    a
+      @include font('Calibri-Regular', 15px)
+      color: black
+
+      &:hover
+        color: $blue
+
+  .discounts
+    display: flex
+    margin-top: 20px
+    margin-bottom: 40px
+
+    .discount-block-1,
+    .discount-block-2,
+    .discount-block-3
+      width: 350px
+      height: 295px
+      margin-right: 50px
+      padding: 20px 0 0 20px
+      background-color: #fff
+
+      .discount-name
+        @include font ('Calibri-Bold', 35px)
+        line-height: 30px
+
+
+    .discount-block-1
+      background:
+        image: url(../../img/discount-block-1.jpg)
+        repeat: no-repeat
+        position: 90% 90%
+
+      .discount-name
+        color: $blue
+
+    .discount-block-2
+      background:
+        image: url(../../img/discount-block-2.jpg)
+        repeat: no-repeat
+        position: 100% 100%
+
+      .discount-name
+        color: $middle-accent
+
+    .discount-block-3
+      background-color: $orange
+      background:
+        image: url(../../img/discount-block-3.png)
+        repeat: no-repeat
+        position: 100% 100%
+
+      .discount-name
+        color: #fff
+
+    .fa-caret-right
+      margin-right: 10px
+      color: $blue
+
+    ul
+      li
+        @include font ('Calibri-Regular', 18px)
+        color: #555
+        margin-bottom: 10px
+
+  .products-name
+    margin: 0 0 15px 0
+    @include font ('Calibri-Regular', 35px)
+    color: #32302f
+
+  .products
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 315px
+    margin-bottom: 40px
+    background-color: #fff
+    border-top: 4px solid $blue
+
+    .slick-prev
+      width: 0
+      height: 0
+      margin-left: -10px
+      border-style: solid
+      border-width: 35px 35px 35px 0
+      border-color: transparent lighten($orange, 5) transparent transparent
+
+      &:hover
+        border-color: transparent $orange transparent transparent
+
+    .slick-next
+      width: 0
+      height: 0
+      margin-right: -10px
+      border-style: solid
+      border-width: 35px 0 35px 35px
+      border-color: transparent transparent transparent lighten($orange, 5)
+
+      &:hover
+        border-color: transparent transparent transparent $orange
+
+  .product-inner
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    width: 170px
+    min-height: 270px
+    margin-left: 60px
+    text-align: center
+
+  .product-name
+    @include font ('Calibri-Bold', 16px)
+    margin-bottom: 5px
+
+  .rate
+    margin-bottom: 5px
+
+    .fa-star,
+    .fa-star-half-o
+      color: gold
+
+  .old-price
+    @include font ('Calibri-Regular', 14px)
+
+  .new-price
+    @include font ('Calibri-Regular', 33px)
+    color: $blue
+
+.company-features-bottom
+  @extend .company-features
+  height: 110px
+  background-color: $light-accent
+  .container
+    display: flex
+    justify-content: space-between
+
+    .feature
+      margin-top: 60px
+      .feature-text
+        span:nth-child(1),
+        span:nth-child(2),
+          color: #fff
+
+      .fa-plane
+        color: #fff
+
+      .fa-clock-o
+        color: #fff
+
+      .fa-life-ring
+        color: #fff
+
+footer
+  background-color: $middle-accent
+
+  .container
+    display: flex
+    justify-content: space-between
+    padding-top: 60px
+
+
+  .footer-item-name
+    display: inline-block
+    margin-bottom: 20px
+    @include font ('Calibri-Regular', 20px)
+    color: #fff
+
+  ul
+    margin: 0
+    padding: 0
+
+    li
+      @include font ('Calibri-Regular', 14px)
+      line-height: 30px
+
+      .fa-caret-right
+        padding-right: 5px
+        color: $blue
+
+  .sale-news
+    max-width: 290px
+  .sale-news-text
+    @include font ('Calibri-Regular', 14px)
+    color: #fff
+
+  .email-sign-up
+    display: flex
+    align-items: center
+    margin-bottom: 10px
+
+  input
+    width: 230px
+    padding: 10px 0 10px 15px
+    border: 2px solid grey
+    background-color: $middle-accent
+    @include font ('Calibri-Regular', 14px)
+    color: #fff
+    outline: none
+
+  input::placeholder
+    color: #fff
+
+  .fa-envelope
+    width: 40px
+    height: 40px
+    text-align: center
+    line-height: 38px
+    color: #fff
+    background-color: $blue
+
+  .social-links
+    display: flex
+    justify-content: space-between
+    width: 100%
+
+    .fa-facebook,
+    .fa-youtube,
+    .fa-twitter,
+    .fa-linkedin-square
+      font-size: 22px
+      color: #fff
+
+.footer-bottom
+  background-color: $dark-accent
+
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 95px
+
+  .copyright
+    @include font ('Calibri-Regular', 14px)
+    color: #fff
+    margin: 0
