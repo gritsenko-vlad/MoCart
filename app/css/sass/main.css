@@ -274,7 +274,7 @@ nav {
             align-items: center;
     margin: 0 auto;
     max-width: 1200px;
-    min-height: 55px; }
+    min-height: 75px; }
     .company-features .container .feature, .company-features-bottom .container .feature {
       display: -webkit-box;
       display: -webkit-flex;
@@ -419,6 +419,8 @@ nav {
           font-family: "Calibri-Regular";
           font-size: 34px;
           color: #2ca5fa; }
+  .container .categories-mobile {
+    display: none; }
   .container .categories {
     display: -webkit-box;
     display: -webkit-flex;
@@ -556,7 +558,7 @@ nav {
             justify-content: space-between;
     width: 170px;
     min-height: 270px;
-    margin-left: 60px;
+    margin-left: 100px;
     text-align: center; }
   .container .product-name {
     font-family: "Calibri-Bold";
@@ -576,28 +578,34 @@ nav {
     color: #2ca5fa; }
 
 .company-features-bottom {
-  height: 110px;
   background-color: #406884; }
   .company-features-bottom .container {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-    .company-features-bottom .container .feature {
-      margin-top: 60px; }
-      .company-features-bottom .container .feature .feature-text span:nth-child(1),
-      .company-features-bottom .container .feature .feature-text span:nth-child(2) {
-        color: #fff; }
-      .company-features-bottom .container .feature .fa-plane {
-        color: #fff; }
-      .company-features-bottom .container .feature .fa-clock-o {
-        color: #fff; }
-      .company-features-bottom .container .feature .fa-life-ring {
-        color: #fff; }
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-height: 110px; }
+    .company-features-bottom .container .feature .feature-text span:nth-child(1),
+    .company-features-bottom .container .feature .feature-text span:nth-child(2) {
+      color: #fff; }
+    .company-features-bottom .container .feature .fa-plane {
+      color: #fff; }
+    .company-features-bottom .container .feature .fa-clock-o {
+      color: #fff; }
+    .company-features-bottom .container .feature .fa-life-ring {
+      color: #fff; }
 
 footer {
   background-color: #38464f; }
@@ -610,9 +618,10 @@ footer {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 60px; }
+    padding-bottom: 20px; }
   footer .footer-item-name {
     display: inline-block;
+    margin-top: 30px;
     margin-bottom: 20px;
     font-family: "Calibri-Regular";
     font-size: 20px;
@@ -691,10 +700,12 @@ footer {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -727,7 +738,7 @@ footer {
       margin-right: 10px; }
     header .top-main .container .top-refs {
       display: none; }
-  .news {
+  .container .news {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -740,15 +751,39 @@ footer {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; } }
+            align-items: center; }
+    .container .news .stock-banner {
+      width: 100%; } }
+
+@media only screen and (max-width: 750px) {
+  footer .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
 
 @media only screen and (max-width: 600px) {
   header .top-main .container .search-box {
     display: none; }
-  header .company-features .feature:nth-child(3), header .company-features-bottom .feature:nth-child(3) {
-    margin-top: 10px; }
   nav .container .select-style {
     display: none; }
   nav .container ul li:hover {
     padding: 0;
     border-bottom: none; } }
+
+@media only screen and (max-width: 460px) {
+  .container .categories-mobile {
+    display: block;
+    margin-top: 20px;
+    text-align: center; }
+    .container .categories-mobile select {
+      width: 100%;
+      height: 50px;
+      padding-left: 20px;
+      background-color: #fff;
+      border: none; }
+  .container .categories {
+    display: none; } }

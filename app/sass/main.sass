@@ -216,7 +216,7 @@ nav
     align-items: center
     margin: 0 auto
     max-width: 1200px
-    min-height: 55px
+    min-height: 75px
 
     .feature
       display: flex
@@ -340,7 +340,8 @@ nav
         .new-price
           @include font('Calibri-Regular', 34px)
           color: $blue
-
+  .categories-mobile
+    display: none
   .categories
     display: flex
     justify-content: space-around
@@ -464,7 +465,7 @@ nav
     justify-content: space-between
     width: 170px
     min-height: 270px
-    margin-left: 60px
+    margin-left: 100px
     text-align: center
 
   .product-name
@@ -487,14 +488,19 @@ nav
 
 .company-features-bottom
   @extend .company-features
-  height: 110px
   background-color: $light-accent
+
   .container
     display: flex
-    justify-content: space-between
+    justify-content: space-around
+    flex-wrap: wrap
+    align-items: center
+    margin: 0 auto
+    max-width: 1200px
+    min-height: 110px
+
 
     .feature
-      margin-top: 60px
       .feature-text
         span:nth-child(1),
         span:nth-child(2),
@@ -515,11 +521,13 @@ footer
   .container
     display: flex
     justify-content: space-between
-    padding-top: 60px
+    padding-bottom: 20px
+
 
 
   .footer-item-name
     display: inline-block
+    margin-top: 30px
     margin-bottom: 20px
     @include font ('Calibri-Regular', 20px)
     color: #fff
@@ -584,7 +592,8 @@ footer
 
   .container
     display: flex
-    justify-content: space-between
+    justify-content: space-around
+    flex-wrap: wrap
     align-items: center
     height: 95px
 
@@ -592,6 +601,9 @@ footer
     @include font ('Calibri-Regular', 14px)
     color: #fff
     margin: 0
+
+
+
 
 
 @import "../sass/_media.sass"
