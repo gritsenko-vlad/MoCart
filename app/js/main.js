@@ -24,6 +24,7 @@ setInterval(function() {
 //slick carousel
 
 $(document).ready(function(){
+
   $('.discounts').slick({
     dots: false,
     infinite: false,
@@ -101,4 +102,13 @@ $(document).ready(function(){
       }
     ]
   });
+
+  $("#my-menu").mmenu({
+         // Options
+      });
+      var API = $("#my-menu").data( "mmenu" );
+
+      $("#my-button").click(function() {
+         API.open();
+      });
 });

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/sass/main.css">
   <link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="libs/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" href="libs/mmenu/jquery.mmenu.css">
   <title>MoCart</title>
 </head>
 <body>
@@ -26,6 +27,7 @@
 
       <div class="top-main">
         <div class="container">
+
           <object data="img/top-logo.svg" class="top-logo"></object>
 
           <div class="search-box">
@@ -39,7 +41,31 @@
             <i class="fa fa-search" aria-hidden="true"></i>
           </div>
 
-          <i class="fa fa-bars" aria-hidden="true"></i>
+          <a href="#my-menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+          <div id="my-menu">
+            <div class="top-refs">
+              <a href="#" class="my-acc">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span>My account</span>
+              </a>
+
+              <a href="#" class="track-order">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>Track order</span>
+              </a>
+
+              <a href="#" class="login">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+                <span>Login</span>
+              </a>
+
+              <span class="cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                0
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </div>
+          </div>
           <div class="top-refs">
             <a href="#" class="my-acc">
               <i class="fa fa-user" aria-hidden="true"></i>
@@ -680,6 +706,7 @@
 
   <script src="libs/jquery/dist/jquery.min.js" charset="utf-8"></script>
   <script src="libs/slick-carousel/slick/slick.min.js"></script>
+  <script src="libs/mmenu/jquery.mmenu.min.js"></script>
   <script src="js/main.js" charset="utf-8"></script>
   <script src="https://use.fontawesome.com/dc824e9272.js"></script>
 </body>
