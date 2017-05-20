@@ -10,22 +10,23 @@
   <link rel="stylesheet" href="css/sass/main.css">
   <link rel="stylesheet" href="libs/slick-carousel/slick/slick.css">
   <link rel="stylesheet" href="libs/slick-carousel/slick/slick-theme.css">
-  <link rel="stylesheet" href="libs/mmenu/jquery.mmenu.css">
   <title>MoCart</title>
 </head>
+
 <body>
-
   <header>
-      <div class="top-info">
-        <div class="container">
-          <span class="contact-support">contact & support:</span>
-          <span class="number"> +1800 1234 5678</span>
-          <a href="#" class="contact-us">contact us</a>
-          <a href="#" class="help">help</a>
-        </div>
+    <!-- Contact information  -->
+    <div class="top-info">
+      <div class="container">
+        <span class="contact-support">contact & support:</span>
+        <span class="number"> +1800 1234 5678</span>
+        <a href="#" class="contact-us">contact us</a>
+        <a href="#" class="help">help</a>
       </div>
+    </div>
 
-      <div class="top-main">
+    <!-- Logo, search and inforamation for user -->
+    <div class="top-main">
         <div class="container">
 
           <object data="img/top-logo.svg" class="top-logo"></object>
@@ -41,32 +42,8 @@
             <i class="fa fa-search" aria-hidden="true"></i>
           </div>
 
-          <a href="#my-menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
-          <div id="my-menu">
-            <div class="top-refs">
-              <a href="#" class="my-acc">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <span>My account</span>
-              </a>
-
-              <a href="#" class="track-order">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>Track order</span>
-              </a>
-
-              <a href="#" class="login">
-                <i class="fa fa-lock" aria-hidden="true"></i>
-                <span>Login</span>
-              </a>
-
-              <span class="cart">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                0
-                <i class="fa fa-angle-down" aria-hidden="true"></i>
-              </span>
-            </div>
-          </div>
           <div class="top-refs">
+            <i class="fa fa-bars" aria-hidden="true"></i>
             <a href="#" class="my-acc">
               <i class="fa fa-user" aria-hidden="true"></i>
               <span>My account</span>
@@ -91,7 +68,8 @@
         </div>
       </div>
 
-      <nav>
+    <!-- Product navigation -->
+    <nav>
         <div class="container">
           <div class="select-style">
             <select>
@@ -109,7 +87,7 @@
         </div>
       </nav>
 
-      <div class="company-features">
+    <div class="company-features">
         <div class="container">
           <div class="feature">
             <i class="fa fa-plane" aria-hidden="true"></i>
@@ -137,6 +115,7 @@
   </header>
 
   <div class="container">
+    <!-- Two main news blocks -->
     <div class="news">
         <div class="news-banner">
           <img src="img/news-banner.png" alt="fashion" class="news-image">
@@ -159,6 +138,8 @@
           </div>
         </div>
     </div>
+
+    <!-- Adaptive 'select' for mobile devices -->
     <div class="categories-mobile">
       <select>
         <option value="Categories" selected disabled>Categories</option>
@@ -176,6 +157,8 @@
         <option value="Books">Books</option>
       </select>
     </div>
+
+    <!-- Product categories -->
     <div class="categories">
       <span>Go quickly to</span>
       <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
@@ -192,6 +175,8 @@
       <a href="#">Travel</a>:
       <a href="#">Books</a>
     </div>
+
+    <!-- Carousel with discounts -->
     <div class="discounts">
       <div class="discount-block-1">
         <span class="discount-name">20% off on Mobiles & more.*</span>
@@ -239,6 +224,7 @@
       </div>
     </div>
 
+    <!-- 3 carousels with products -->
     <h3 class="products-name">Latest products</h3>
     <div class="products">
 
@@ -505,6 +491,7 @@
         </div>
       </div>
     </div>
+    <!-- - - - - - - - - - - - - - -->
   </div>
 
   <div class="company-features-bottom">
@@ -706,7 +693,6 @@
 
   <script src="libs/jquery/dist/jquery.min.js" charset="utf-8"></script>
   <script src="libs/slick-carousel/slick/slick.min.js"></script>
-  <script src="libs/mmenu/jquery.mmenu.min.js"></script>
   <script src="js/main.js" charset="utf-8"></script>
   <script src="https://use.fontawesome.com/dc824e9272.js"></script>
 </body>
