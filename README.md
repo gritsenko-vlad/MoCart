@@ -1,3 +1,3 @@
 # MoCart
 
-[Demo](https://gritsenko-vlad.github.io/MoCart/app)
+[Demo](https://vlad-gritsenko.github.io/MoCart/app)
