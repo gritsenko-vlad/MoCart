@@ -13,13 +13,13 @@
         display: flex
         align-items: center
 
-        .fa-bars
+        .hamburger
+          display: flex
           position: absolute
-          top: -5px
-          left: -45px
-          display: block
+          top: 0
+          left: -55px
 
-        .top-refs
+        .top-links
           display: flex
           flex-direction: column
           justify-content: flex-start
@@ -65,7 +65,7 @@
           .separator
             display: none
 
-        .toggle-top-refs
+        .toggle-top-links
           margin-right: 0
           transition: .5s
 
@@ -95,7 +95,36 @@
           padding: 0
           border-bottom: none
 
-@media only screen and (max-width: 460px)
+@media only screen and (max-width: 465px)
+  .top-info .container
+    flex-direction: column
+    justify-content: center
+
+    .contact-support,
+    .help-links
+      display: flex
+      justify-content: center
+      align-items: center
+      flex-basis: 100%
+      width: 100%
+
+    .contact-support
+
+      .contact
+        margin-left: 0
+
+      .number
+        padding-right: 0
+        border: none
+
+    .contact-us,
+    .help
+      padding: 0
+      border: none
+
+    .contact-us
+      margin-right: 15px
+
   .container
     .categories-mobile
       display: block
@@ -111,3 +140,8 @@
 
     .categories
       display: none
+
+
+@media only screen and (max-width: 375px)
+  nav li a
+    font-size: 14px

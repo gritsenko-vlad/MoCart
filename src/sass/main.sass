@@ -16,37 +16,42 @@ li
 .top-info
   display: flex
   align-items: center
-  height: 40px
+  min-height: 40px
   background-color: $dark-accent
 
   .container
     display: flex
+    justify-content: flex-end
     align-items: center
     margin: 0 auto
     width: 1200px
+    height: auto
 
     a, span
-      color: #e5edf4
       @include font('Calibri-Bold', 14px)
       text-transform: uppercase
 
-    .contact-support
-      margin-left: auto
-      margin-right: 15px
+.contact-support
+  .contact
+    // display: block
+    margin-left: auto
+    margin-right: 15px
+    color: #e5edf4
 
-    .number
-      color: #d9d71a
-      padding-right: 25px
-      line-height: 12px
-      border-right: 1px solid #8f9193
+  .number
+    color: #d9d71a
+    padding-right: 25px
+    line-height: 12px
+    border-right: 1px solid #8f9193
 
-    .contact-us
-      padding: 0 25px 0 20px
-      line-height: 12px
-      border-right: 1px solid #8f9193
+.help-links
+  .contact-us
+    padding: 0 25px 0 20px
+    line-height: 12px
+    border-right: 1px solid #8f9193
 
-    .help
-      padding: 0 15px 0 25px
+  .help
+    padding: 0 15px 0 25px
 
 // Logo, search and inforamation for user
 .top-main
@@ -63,6 +68,9 @@ li
     display: flex
     margin: 0 auto
     width: 1200px
+
+    object
+      margin-left: 10px
 
     select
       @include font('Calibri-Regular', 16px)
@@ -104,68 +112,78 @@ li
         background-color: $blue
         cursor: pointer
 
-    // Menu icon for mobile devices
-    .fa-bars
-      display: none
+// Menu icon for mobile devices
+.hamburger
+  display: none
+  flex-direction: column
+  width: 40px
+  height: 30px
+
+  span
+    width: 100%
+    height: 5px
+    margin-bottom: 5px
+    background-color: #fff
+
+.active
+  transform: translateX(-100%)
+
+// Account, track order, login links
+.top-links
+  width: 40%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-left: 20px
+  @include font('Calibri-Bold', 12px)
+  text-transform: uppercase
+
+  .my-acc,
+  .track-order,
+  .login
+    position: relative
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    i
+      &:nth-child(1)
+        margin-bottom: 5px
+
+  .track-order:before
+    content: ''
+    position: absolute
+    top: 40%
+    right: -15px
+    width: 1px
+    height: 10px
+    background-color: grey
+
+  .track-order::after
+    content: ''
+    position: absolute
+    top: 40%
+    left: -15px
+    width: 1px
+    height: 10px
+    background-color: grey
+
+  .cart
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 40px
+    padding: 7px
+    margin-right: 15px
+    color: #fff
+    background-color: $orange
+    border-radius: 5px
+    cursor: pointer
+
+    .fa-shopping-cart,
+    .fa-angle-down
+      font-size: 16px
       color: #fff
-      font-size: 36px
-
-    // Account, track order, login links
-    .top-refs
-      width: 40%
-      display: flex
-      align-items: center
-      justify-content: space-between
-      margin-left: 20px
-      @include font('Calibri-Bold', 12px)
-      text-transform: uppercase
-
-      .my-acc,
-      .track-order,
-      .login
-        position: relative
-        display: flex
-        flex-direction: column
-        align-items: center
-
-        i
-          &:nth-child(1)
-            margin-bottom: 5px
-
-      .track-order:before
-        content: ''
-        position: absolute
-        top: 40%
-        right: -15px
-        width: 1px
-        height: 10px
-        background-color: grey
-
-      .track-order::after
-        content: ''
-        position: absolute
-        top: 40%
-        left: -15px
-        width: 1px
-        height: 10px
-        background-color: grey
-
-      .cart
-        display: flex
-        justify-content: space-between
-        align-items: center
-        width: 40px
-        padding: 7px
-        margin-right: 15px
-        color: #fff
-        background-color: $orange
-        border-radius: 5px
-        cursor: pointer
-
-        .fa-shopping-cart,
-        .fa-angle-down
-          font-size: 16px
-          color: #fff
 
 // Product navigation
 nav
@@ -279,15 +297,15 @@ nav
     display: flex
     justify-content: space-between
     margin-top: 50px
+    overflow: hidden
 
     .news-banner
       position: relative
       max-width: 770px
       height: 370px
-      background-color: #fff
 
       .news-image
-        width: 100%
+        // width: 100%
         height: 370px
 
       .preview-now-btn
@@ -529,7 +547,7 @@ footer
   .container
     display: flex
     justify-content: space-between
-    padding-bottom: 20px
+    padding: 10px
 
 
 
