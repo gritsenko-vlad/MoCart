@@ -7,6 +7,7 @@
 @media only screen and (max-width: 870px)
   header
     overflow: hidden
+
     .top-main
       .container
         position: relative
@@ -78,6 +79,22 @@
       .stock-banner
         width: 100%
 
+  .container
+    .categories-mobile
+      display: block
+      margin-top: 20px
+      text-align: center
+
+      select
+        width: 100%
+        height: 50px
+        padding-left: 20px
+        background-color: #fff
+        border: none
+
+    .categories
+      display: none
+
 @media only screen and (max-width: 750px)
   footer
     .container
@@ -88,12 +105,12 @@
   nav
     .container
       .select-style
-        display: none
+        margin: 0 auto
 
+        select
+          margin-right: 0
       ul
-        li:hover
-          padding: 0
-          border-bottom: none
+        display: none
 
 @media only screen and (max-width: 465px)
   .top-info .container
@@ -124,23 +141,6 @@
 
     .contact-us
       margin-right: 15px
-
-  .container
-    .categories-mobile
-      display: block
-      margin-top: 20px
-      text-align: center
-
-      select
-        width: 100%
-        height: 50px
-        padding-left: 20px
-        background-color: #fff
-        border: none
-
-    .categories
-      display: none
-
 
 @media only screen and (max-width: 375px)
   nav li a

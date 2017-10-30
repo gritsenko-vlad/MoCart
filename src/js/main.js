@@ -3,7 +3,8 @@ $(document).ready(function(){
   $('.discounts').slick({
     dots: false,
     infinite: true,
-    variableWidth: true,
+    variableWidth: false,
+    arrows: false,
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -25,7 +26,7 @@ $(document).ready(function(){
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 850,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
